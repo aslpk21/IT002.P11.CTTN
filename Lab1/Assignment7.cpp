@@ -234,10 +234,15 @@ int main() {
                 break;
             }
 
-            case 3:
+            case 3: {
                 sortFlight(flights); // Sắp xếp danh sách chuyến bay
-                cout << "\nFlight list sorted by time.\n";
+                cout << "\nFlights sorted by time: \n";
+                for (const auto &flight : flights) {
+                    displayFlightInfor(flight); // Hiển thị thông tin của từng chuyến bay đã được sắp xếp
+                    cout << endl;
+                }
                 break;
+            }
 
             case 4: {
                 // Hiển thị danh sách những chuyến bay từ 1 nơi khởi hành vào ngày cụ thể
