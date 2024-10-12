@@ -256,10 +256,16 @@ int main() {
             }
 
             case 5: {
+                // Đếm chuyến bay từ 1 nơi khởi hành tới 1 địa điểm nhất định
                 string origin, destination;
                 cout << "Enter origin and destination: ";
-                cin >> origin >> destination;
-                int flightCount = countFlightFromAtoB(flights, origin, destination); // Đếm chuyến bay từ A đến B
+                // Nhập vào điểm khởi hành và điểm đến
+                cin.ignore();
+                getline(cin, origin);
+                getline(cin, destination);
+
+                // Đếm số chuyến bay từ 1 điểm khởi hành tới 1 điểm dến
+                int flightCount = countFlightFromAtoB(flights, origin, destination);
                 cout << "Number of flights from " << origin << " to " << destination << ": " << flightCount << endl;
                 break;
             }
