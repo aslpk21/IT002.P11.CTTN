@@ -12,7 +12,7 @@ public:
     int TinhNgay();
     NgayThangNam operator+(int ngay);
     NgayThangNam operator-(int ngay);
-    NgayThangNam operator-(NgayThangNam a);
+    int operator-(NgayThangNam a);
     bool operator==(NgayThangNam a);
     bool operator!=(NgayThangNam a);
     bool operator>=(NgayThangNam a);
