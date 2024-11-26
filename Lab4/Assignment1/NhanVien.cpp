@@ -19,5 +19,5 @@ void NhanVien::Nhap(){
 void NhanVien::Xuat(){
     cout << "Ma so: " << MaSo << "\n"
          << "Ho ten: " << Ten << "\n"
-         << "Luong co ban: " << LuongCoBan << " VND\n"; 
+         << "Luong co ban: " << fixed << setprecision(0) << LuongCoBan << " VND\n";
 }
