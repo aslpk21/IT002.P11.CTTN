@@ -1,16 +1,17 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<iomanip>
 using namespace std;
 
-class NhanVien{
-    protected:
-        string MaSo, Ten;
-        double LuongCoBan;
-    public:
-        NhanVien();
-        virtual ~NhanVien() = default;
-        virtual double TienThuong() = 0;
-        virtual void Nhap();
-        virtual void Xuat();
+class NhanVien {
+protected:
+    string MaSo, Ten;
+    double LuongCoBan;
+public:
+    NhanVien();
+    virtual ~NhanVien() = default;
+    virtual double TienThuong() = 0;
+    virtual void Nhap();
+    virtual void Xuat();
 };
